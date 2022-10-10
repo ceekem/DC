@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    font-family: "Poppins", cursive;
+    margin: 0;
+}
+
+body{
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form{
+  /* max-width: 320px;
+  width: 100vw; */
+  margin: 2em auto;
+}
+
+.form >  select, .btn{
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+}
+
+.form > select:focus{
+  outline: none;
+}
+
+.form > .btn{
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.formD{
+    width: 100%;
+    background: white;
+}
+
+.decision{
+    color: rgb(24, 145, 32);
+    font-size: xx-large;
+  }
+  
+  .decisionER{
+    color: crimson;
+  }
+  
+select{
+    width: 100%;
+    text-align: center;
+}
+
+/* menu */
+.menu {
+  top: 0;
+  width: 100%;
+}
+
+.head{
+  color: cornflowerblue;
+}
+.menu-bar {
+  border-radius: 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  padding: 0 10px;
+  /* margin: 50px 0 0 0; */
+  margin: 19px 0 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.menu-bar li {
+  list-style: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px 0px;
+  margin: 0 8px;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.menu-bar li::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.2s;
+  border-radius: 25px;
+}
+.menu-bar li:hover {
+  color: black;
+}
+.menu-bar li:hover::before {
+  background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+  box-shadow: 0px 3px 20px 0px black;
+  transform: scale(1.2);
+}
+
+.val{
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+/* temperature */
+#veryHot{
+  font-weight: bold;
+  color: red;
+}
+
+#hot{
+  font-weight: bold;
+  color: rgb(255, 145, 0);
+}
+
+#cold{
+  font-weight: bold;
+  color: lightseagreen;
+}
+
+#veryCold{
+  font-weight: bold;
+  color: rgb(17, 8, 98)
+}
+
+#warm{
+  font-weight: bold;
+  color: rgb(236, 229, 31);
+}
+
+#res{
+  width: 76%;
+  margin:0px;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+
+    /* Mobile Phones and Tablet Portrait, Landscape View */
+    @media screen and (max-device-width: 768px) {
+              .mag{
+            margin-right: 0px !important;
+            }
+             .menu-bar{
+              font-size: 6px;
+             }
+
+             .res{
+              margin:0px;
+             }
+    }
